@@ -1,0 +1,31 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local persistence
+data/
+
+# Secrets (keep .env.example, if you add one, tracked)
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Local editor and Claude Code settings
+.vscode/
+.claude/settings.local.json

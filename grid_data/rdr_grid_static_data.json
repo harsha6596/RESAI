@@ -1,0 +1,1086 @@
+{
+  "metadata": {
+    "source": "3 log-matched incident records + 27 synthetic dashboard-only fixture records",
+    "note": "The first three records correspond to the provided synthetic RDR logs. The 27 additional VINs and records are fabricated dashboard filler; no matching log evidence is included for these. REJECTED/BLOCKED submissions have no RDR ID.",
+    "total_records": 30,
+    "log_matched_records": 3,
+    "additional_grid_only_records": 27
+  },
+  "records": [
+    {
+      "key": "demo1",
+      "rdr_id": "RDR-20261123-008421",
+      "submission_id": "SUB-20261123-000184",
+      "vin": "4T1R11AK6TA900101",
+      "dealer_id": "DLR-1042",
+      "customer": null,
+      "sale_type": "RETAIL",
+      "status": "PENDING",
+      "transaction_state": "PENDING",
+      "priority": null,
+      "retry_count": 3,
+      "submitted_at": "2026-11-23T14:04:06.201Z",
+      "last_updated": "2026-11-23T14:10:12.431Z",
+      "portal_message": "Submission accepted. Processing is taking longer than expected.",
+      "last_error_display": "Processing delayed",
+      "correlation_id": "CORR-RDR-IT-7A21E4C9",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:04:06Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:04:06Z",
+          "label": "Data validation passed",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:04:06Z",
+          "label": "RDR created as Pending",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:06:14Z",
+          "label": "Processing attempts exhausted",
+          "state": "warn"
+        },
+        {
+          "time": "2026-11-23T14:10:12Z",
+          "label": "RDR still Pending",
+          "state": "warn"
+        }
+      ],
+      "source_type": "matched_to_provided_logs"
+    },
+    {
+      "key": "demo2",
+      "rdr_id": null,
+      "submission_id": "SUB-20261123-000237",
+      "vin": "4T1R11AK8TA900102",
+      "dealer_id": "DLR-2077",
+      "customer": null,
+      "sale_type": "RETAILL",
+      "status": "REJECTED",
+      "transaction_state": "NOT_CREATED",
+      "priority": null,
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:05:03.221Z",
+      "last_updated": "2026-11-23T14:06:52.814Z",
+      "portal_message": "We couldn't submit this RDR. Review the entered information and try again.",
+      "last_error_display": "Submission validation failed",
+      "correlation_id": "CORR-RDR-INPUT-9D02A71E",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:04:57Z",
+          "label": "Form opened",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:05:03Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:05:03Z",
+          "label": "Validation rejected submission",
+          "state": "error"
+        },
+        {
+          "time": "2026-11-23T14:05:23Z",
+          "label": "Submission retried and rejected",
+          "state": "error"
+        },
+        {
+          "time": "2026-11-23T14:06:52Z",
+          "label": "No RDR created",
+          "state": "warn"
+        }
+      ],
+      "source_type": "matched_to_provided_logs"
+    },
+    {
+      "key": "demo3",
+      "rdr_id": null,
+      "submission_id": "SUB-20261123-000316",
+      "vin": "4T1R11AKXTA900103",
+      "dealer_id": "DLR-3018",
+      "customer": null,
+      "sale_type": "RETAIL",
+      "status": "BLOCKED",
+      "transaction_state": "NOT_CREATED",
+      "priority": null,
+      "retry_count": 3,
+      "submitted_at": "2026-11-23T14:04:19.201Z",
+      "last_updated": "2026-11-23T14:05:46.280Z",
+      "portal_message": "Vehicle eligibility could not be verified right now. Please try again later.",
+      "last_error_display": "Vehicle verification unavailable",
+      "correlation_id": "CORR-RDR-UP-67F0B19A",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:04:19Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:04:19Z",
+          "label": "Local validation passed",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:04:19Z",
+          "label": "Vehicle eligibility check started",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:04:20Z",
+          "label": "Vehicle verification unavailable",
+          "state": "error"
+        },
+        {
+          "time": "2026-11-23T14:05:46Z",
+          "label": "No RDR created",
+          "state": "warn"
+        }
+      ],
+      "source_type": "matched_to_provided_logs"
+    },
+    {
+      "key": "sample-001",
+      "rdr_id": "RDR-20261123-008422",
+      "submission_id": "SUB-20261123-000401",
+      "vin": "4T1R11AK1TA900104",
+      "dealer_id": "DLR-1042",
+      "customer": "Avery Collins",
+      "sale_type": "RETAIL",
+      "status": "COMPLETED",
+      "transaction_state": "COMPLETED",
+      "priority": "Low",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:01:17.000Z",
+      "last_updated": "2026-11-23T14:01:45.000Z",
+      "portal_message": "RDR processed successfully",
+      "last_error_display": null,
+      "correlation_id": "CORR-RDR-SAMPLE-0001",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:01:17Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:01:24Z",
+          "label": "Validation passed",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:01:45Z",
+          "label": "RDR completed",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "key": "sample-002",
+      "rdr_id": "RDR-20261123-008423",
+      "submission_id": "SUB-20261123-000402",
+      "vin": "4T1R11AK3TA900105",
+      "dealer_id": "DLR-2077",
+      "customer": "Jordan Patel",
+      "sale_type": "RETAIL",
+      "status": "COMPLETED",
+      "transaction_state": "COMPLETED",
+      "priority": "Low",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:02:34.000Z",
+      "last_updated": "2026-11-23T14:03:05.000Z",
+      "portal_message": "RDR processed successfully",
+      "last_error_display": null,
+      "correlation_id": "CORR-RDR-SAMPLE-0002",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:02:34Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:02:41Z",
+          "label": "Validation passed",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:03:05Z",
+          "label": "RDR completed",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "key": "sample-003",
+      "rdr_id": "RDR-20261123-008424",
+      "submission_id": "SUB-20261123-000403",
+      "vin": "4T1R11AK5TA900106",
+      "dealer_id": "DLR-3018",
+      "customer": "Taylor Brooks",
+      "sale_type": "RETAIL",
+      "status": "PENDING",
+      "transaction_state": "PENDING",
+      "priority": "Medium",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:03:51.000Z",
+      "last_updated": "2026-11-23T14:07:51.000Z",
+      "portal_message": "Submission accepted and awaiting processing",
+      "last_error_display": "Processing in progress",
+      "correlation_id": "CORR-RDR-SAMPLE-0003",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:03:51Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:03:59Z",
+          "label": "RDR created as Pending",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:07:51Z",
+          "label": "Awaiting processing",
+          "state": "warn"
+        }
+      ]
+    },
+    {
+      "key": "sample-004",
+      "rdr_id": "RDR-20261123-008425",
+      "submission_id": "SUB-20261123-000404",
+      "vin": "4T1R11AK7TA900107",
+      "dealer_id": "DLR-1189",
+      "customer": "Morgan Lee",
+      "sale_type": "RETAIL",
+      "status": "COMPLETED",
+      "transaction_state": "COMPLETED",
+      "priority": "Low",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:04:08.000Z",
+      "last_updated": "2026-11-23T14:04:45.000Z",
+      "portal_message": "RDR processed successfully",
+      "last_error_display": null,
+      "correlation_id": "CORR-RDR-SAMPLE-0004",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:04:08Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:04:15Z",
+          "label": "Validation passed",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:04:45Z",
+          "label": "RDR completed",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "key": "sample-005",
+      "rdr_id": "RDR-20261123-008426",
+      "submission_id": "SUB-20261123-000405",
+      "vin": "4T1R11AK9TA900108",
+      "dealer_id": "DLR-3321",
+      "customer": "Casey Bennett",
+      "sale_type": "LEASE",
+      "status": "FAILED",
+      "transaction_state": "FAILED",
+      "priority": "High",
+      "retry_count": 1,
+      "submitted_at": "2026-11-23T14:05:25.000Z",
+      "last_updated": "2026-11-23T14:08:25.000Z",
+      "portal_message": "RDR could not be completed",
+      "last_error_display": "Processing failed",
+      "correlation_id": "CORR-RDR-SAMPLE-0005",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:05:25Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:08:25Z",
+          "label": "Processing failed",
+          "state": "error"
+        }
+      ]
+    },
+    {
+      "key": "sample-006",
+      "rdr_id": "RDR-20261123-008427",
+      "submission_id": "SUB-20261123-000406",
+      "vin": "4T1R11AK0TA900109",
+      "dealer_id": "DLR-4450",
+      "customer": "Parker Wilson",
+      "sale_type": "RETAIL",
+      "status": "COMPLETED",
+      "transaction_state": "COMPLETED",
+      "priority": "Low",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:06:42.000Z",
+      "last_updated": "2026-11-23T14:07:25.000Z",
+      "portal_message": "RDR processed successfully",
+      "last_error_display": null,
+      "correlation_id": "CORR-RDR-SAMPLE-0006",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:06:42Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:06:49Z",
+          "label": "Validation passed",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:07:25Z",
+          "label": "RDR completed",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "key": "sample-007",
+      "rdr_id": "RDR-20261123-008428",
+      "submission_id": "SUB-20261123-000407",
+      "vin": "4T1R11AK7TA900110",
+      "dealer_id": "DLR-2130",
+      "customer": "Riley Davis",
+      "sale_type": "RETAIL",
+      "status": "RETRYING",
+      "transaction_state": "RETRYING",
+      "priority": "Medium",
+      "retry_count": 2,
+      "submitted_at": "2026-11-23T14:07:59.000Z",
+      "last_updated": "2026-11-23T14:12:59.000Z",
+      "portal_message": "Processing is being retried",
+      "last_error_display": "Temporary processing delay",
+      "correlation_id": "CORR-RDR-SAMPLE-0007",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:07:59Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:08:07Z",
+          "label": "RDR created as Pending",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:12:59Z",
+          "label": "Retry in progress",
+          "state": "warn"
+        }
+      ]
+    },
+    {
+      "key": "sample-008",
+      "rdr_id": "RDR-20261123-008429",
+      "submission_id": "SUB-20261123-000408",
+      "vin": "4T1R11AK9TA900111",
+      "dealer_id": "DLR-1784",
+      "customer": "Samira Khan",
+      "sale_type": "RETAIL",
+      "status": "COMPLETED",
+      "transaction_state": "COMPLETED",
+      "priority": "Low",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:08:16.000Z",
+      "last_updated": "2026-11-23T14:09:05.000Z",
+      "portal_message": "RDR processed successfully",
+      "last_error_display": null,
+      "correlation_id": "CORR-RDR-SAMPLE-0008",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:08:16Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:08:23Z",
+          "label": "Validation passed",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:09:05Z",
+          "label": "RDR completed",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "key": "sample-009",
+      "rdr_id": null,
+      "submission_id": "SUB-20261123-000409",
+      "vin": "4T1R11AK0TA900112",
+      "dealer_id": "DLR-2098",
+      "customer": "Alex Chen",
+      "sale_type": "RETAIL",
+      "status": "REJECTED",
+      "transaction_state": "NOT_CREATED",
+      "priority": "Medium",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:09:33.000Z",
+      "last_updated": "2026-11-23T14:09:41.000Z",
+      "portal_message": "Submission was rejected. Review the entered information.",
+      "last_error_display": "Submission validation failed",
+      "correlation_id": "CORR-RDR-SAMPLE-0009",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:09:33Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:09:41Z",
+          "label": "Submission rejected",
+          "state": "error"
+        }
+      ]
+    },
+    {
+      "key": "sample-010",
+      "rdr_id": "RDR-20261123-008431",
+      "submission_id": "SUB-20261123-000410",
+      "vin": "4T1R11AK2TA900113",
+      "dealer_id": "DLR-1042",
+      "customer": "Dakota Morgan",
+      "sale_type": "LEASE",
+      "status": "COMPLETED",
+      "transaction_state": "COMPLETED",
+      "priority": "Low",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:10:50.000Z",
+      "last_updated": "2026-11-23T14:11:45.000Z",
+      "portal_message": "RDR processed successfully",
+      "last_error_display": null,
+      "correlation_id": "CORR-RDR-SAMPLE-0010",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:10:50Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:10:57Z",
+          "label": "Validation passed",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:11:45Z",
+          "label": "RDR completed",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "key": "sample-011",
+      "rdr_id": "RDR-20261123-008432",
+      "submission_id": "SUB-20261123-000411",
+      "vin": "4T1R11AK4TA900114",
+      "dealer_id": "DLR-2077",
+      "customer": "Reese Thompson",
+      "sale_type": "RETAIL",
+      "status": "PENDING",
+      "transaction_state": "PENDING",
+      "priority": "Medium",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:11:07.000Z",
+      "last_updated": "2026-11-23T14:15:07.000Z",
+      "portal_message": "Submission accepted and awaiting processing",
+      "last_error_display": "Processing in progress",
+      "correlation_id": "CORR-RDR-SAMPLE-0011",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:11:07Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:11:15Z",
+          "label": "RDR created as Pending",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:15:07Z",
+          "label": "Awaiting processing",
+          "state": "warn"
+        }
+      ]
+    },
+    {
+      "key": "sample-012",
+      "rdr_id": "RDR-20261123-008433",
+      "submission_id": "SUB-20261123-000412",
+      "vin": "4T1R11AK6TA900115",
+      "dealer_id": "DLR-3018",
+      "customer": "Jamie Reed",
+      "sale_type": "RETAIL",
+      "status": "CANCELLED",
+      "transaction_state": "CANCELLED",
+      "priority": "Low",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:12:24.000Z",
+      "last_updated": "2026-11-23T14:13:24.000Z",
+      "portal_message": "Submission was cancelled",
+      "last_error_display": "Cancelled by dealer",
+      "correlation_id": "CORR-RDR-SAMPLE-0012",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:12:24Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:13:24Z",
+          "label": "Transaction cancelled",
+          "state": "warn"
+        }
+      ]
+    },
+    {
+      "key": "sample-013",
+      "rdr_id": "RDR-20261123-008434",
+      "submission_id": "SUB-20261123-000413",
+      "vin": "4T1R11AK8TA900116",
+      "dealer_id": "DLR-1189",
+      "customer": "Cameron Price",
+      "sale_type": "RETAIL",
+      "status": "COMPLETED",
+      "transaction_state": "COMPLETED",
+      "priority": "Low",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:13:41.000Z",
+      "last_updated": "2026-11-23T14:14:45.000Z",
+      "portal_message": "RDR processed successfully",
+      "last_error_display": null,
+      "correlation_id": "CORR-RDR-SAMPLE-0013",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:13:41Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:13:48Z",
+          "label": "Validation passed",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:14:45Z",
+          "label": "RDR completed",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "key": "sample-014",
+      "rdr_id": null,
+      "submission_id": "SUB-20261123-000414",
+      "vin": "4T1R11AKXTA900117",
+      "dealer_id": "DLR-3321",
+      "customer": "Devin Ortiz",
+      "sale_type": "RETAIL",
+      "status": "BLOCKED",
+      "transaction_state": "NOT_CREATED",
+      "priority": "High",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:14:58.000Z",
+      "last_updated": "2026-11-23T14:15:48.000Z",
+      "portal_message": "RDR could not be submitted at this time",
+      "last_error_display": "Vehicle information unavailable",
+      "correlation_id": "CORR-RDR-SAMPLE-0014",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:14:58Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:15:48Z",
+          "label": "Submission blocked",
+          "state": "error"
+        }
+      ]
+    },
+    {
+      "key": "sample-015",
+      "rdr_id": "RDR-20261123-008436",
+      "submission_id": "SUB-20261123-000415",
+      "vin": "4T1R11AK1TA900118",
+      "dealer_id": "DLR-4450",
+      "customer": "Harper Stone",
+      "sale_type": "LEASE",
+      "status": "COMPLETED",
+      "transaction_state": "COMPLETED",
+      "priority": "Low",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:15:15.000Z",
+      "last_updated": "2026-11-23T14:16:25.000Z",
+      "portal_message": "RDR processed successfully",
+      "last_error_display": null,
+      "correlation_id": "CORR-RDR-SAMPLE-0015",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:15:15Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:15:22Z",
+          "label": "Validation passed",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:16:25Z",
+          "label": "RDR completed",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "key": "sample-016",
+      "rdr_id": "RDR-20261123-008437",
+      "submission_id": "SUB-20261123-000416",
+      "vin": "4T1R11AK3TA900119",
+      "dealer_id": "DLR-2130",
+      "customer": "Rowan Parker",
+      "sale_type": "RETAIL",
+      "status": "RETRYING",
+      "transaction_state": "RETRYING",
+      "priority": "Medium",
+      "retry_count": 2,
+      "submitted_at": "2026-11-23T14:16:32.000Z",
+      "last_updated": "2026-11-23T14:21:32.000Z",
+      "portal_message": "Processing is being retried",
+      "last_error_display": "Temporary processing delay",
+      "correlation_id": "CORR-RDR-SAMPLE-0016",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:16:32Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:16:40Z",
+          "label": "RDR created as Pending",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:21:32Z",
+          "label": "Retry in progress",
+          "state": "warn"
+        }
+      ]
+    },
+    {
+      "key": "sample-017",
+      "rdr_id": "RDR-20261123-008438",
+      "submission_id": "SUB-20261123-000417",
+      "vin": "4T1R11AKXTA900120",
+      "dealer_id": "DLR-1784",
+      "customer": "Sydney Turner",
+      "sale_type": "RETAIL",
+      "status": "FAILED",
+      "transaction_state": "FAILED",
+      "priority": "High",
+      "retry_count": 1,
+      "submitted_at": "2026-11-23T14:17:49.000Z",
+      "last_updated": "2026-11-23T14:20:49.000Z",
+      "portal_message": "RDR could not be completed",
+      "last_error_display": "Processing failed",
+      "correlation_id": "CORR-RDR-SAMPLE-0017",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:17:49Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:20:49Z",
+          "label": "Processing failed",
+          "state": "error"
+        }
+      ]
+    },
+    {
+      "key": "sample-018",
+      "rdr_id": "RDR-20261123-008439",
+      "submission_id": "SUB-20261123-000418",
+      "vin": "4T1R11AK1TA900121",
+      "dealer_id": "DLR-2098",
+      "customer": "Emerson Foster",
+      "sale_type": "RETAIL",
+      "status": "COMPLETED",
+      "transaction_state": "COMPLETED",
+      "priority": "Low",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:18:06.000Z",
+      "last_updated": "2026-11-23T14:19:25.000Z",
+      "portal_message": "RDR processed successfully",
+      "last_error_display": null,
+      "correlation_id": "CORR-RDR-SAMPLE-0018",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:18:06Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:18:13Z",
+          "label": "Validation passed",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:19:25Z",
+          "label": "RDR completed",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "key": "sample-019",
+      "rdr_id": "RDR-20261123-008440",
+      "submission_id": "SUB-20261123-000419",
+      "vin": "4T1R11AK3TA900122",
+      "dealer_id": "DLR-1042",
+      "customer": "Finley Rivera",
+      "sale_type": "RETAIL",
+      "status": "PENDING",
+      "transaction_state": "PENDING",
+      "priority": "Medium",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:19:23.000Z",
+      "last_updated": "2026-11-23T14:23:23.000Z",
+      "portal_message": "Submission accepted and awaiting processing",
+      "last_error_display": "Processing in progress",
+      "correlation_id": "CORR-RDR-SAMPLE-0019",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:19:23Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:19:31Z",
+          "label": "RDR created as Pending",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:23:23Z",
+          "label": "Awaiting processing",
+          "state": "warn"
+        }
+      ]
+    },
+    {
+      "key": "sample-020",
+      "rdr_id": "RDR-20261123-008441",
+      "submission_id": "SUB-20261123-000420",
+      "vin": "4T1R11AK5TA900123",
+      "dealer_id": "DLR-2077",
+      "customer": "Quinn Morales",
+      "sale_type": "LEASE",
+      "status": "COMPLETED",
+      "transaction_state": "COMPLETED",
+      "priority": "Low",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:20:40.000Z",
+      "last_updated": "2026-11-23T14:22:05.000Z",
+      "portal_message": "RDR processed successfully",
+      "last_error_display": null,
+      "correlation_id": "CORR-RDR-SAMPLE-0020",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:20:40Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:20:47Z",
+          "label": "Validation passed",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:22:05Z",
+          "label": "RDR completed",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "key": "sample-021",
+      "rdr_id": null,
+      "submission_id": "SUB-20261123-000421",
+      "vin": "4T1R11AK7TA900124",
+      "dealer_id": "DLR-3018",
+      "customer": "Drew Mitchell",
+      "sale_type": "RETAIL",
+      "status": "REJECTED",
+      "transaction_state": "NOT_CREATED",
+      "priority": "Medium",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:21:57.000Z",
+      "last_updated": "2026-11-23T14:22:05.000Z",
+      "portal_message": "Submission was rejected. Review the entered information.",
+      "last_error_display": "Submission validation failed",
+      "correlation_id": "CORR-RDR-SAMPLE-0021",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:21:57Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:22:05Z",
+          "label": "Submission rejected",
+          "state": "error"
+        }
+      ]
+    },
+    {
+      "key": "sample-022",
+      "rdr_id": "RDR-20261123-008443",
+      "submission_id": "SUB-20261123-000422",
+      "vin": "4T1R11AK9TA900125",
+      "dealer_id": "DLR-1189",
+      "customer": "Elliot Harris",
+      "sale_type": "RETAIL",
+      "status": "COMPLETED",
+      "transaction_state": "COMPLETED",
+      "priority": "Low",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:22:14.000Z",
+      "last_updated": "2026-11-23T14:23:45.000Z",
+      "portal_message": "RDR processed successfully",
+      "last_error_display": null,
+      "correlation_id": "CORR-RDR-SAMPLE-0022",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:22:14Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:22:21Z",
+          "label": "Validation passed",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:23:45Z",
+          "label": "RDR completed",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "key": "sample-023",
+      "rdr_id": "RDR-20261123-008444",
+      "submission_id": "SUB-20261123-000423",
+      "vin": "4T1R11AK0TA900126",
+      "dealer_id": "DLR-3321",
+      "customer": "Ari Patel",
+      "sale_type": "RETAIL",
+      "status": "PENDING",
+      "transaction_state": "PENDING",
+      "priority": "Medium",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:23:31.000Z",
+      "last_updated": "2026-11-23T14:27:31.000Z",
+      "portal_message": "Submission accepted and awaiting processing",
+      "last_error_display": "Processing in progress",
+      "correlation_id": "CORR-RDR-SAMPLE-0023",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:23:31Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:23:39Z",
+          "label": "RDR created as Pending",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:27:31Z",
+          "label": "Awaiting processing",
+          "state": "warn"
+        }
+      ]
+    },
+    {
+      "key": "sample-024",
+      "rdr_id": "RDR-20261123-008445",
+      "submission_id": "SUB-20261123-000424",
+      "vin": "4T1R11AK2TA900127",
+      "dealer_id": "DLR-4450",
+      "customer": "Blair Cooper",
+      "sale_type": "RETAIL",
+      "status": "RETRYING",
+      "transaction_state": "RETRYING",
+      "priority": "Medium",
+      "retry_count": 2,
+      "submitted_at": "2026-11-23T14:24:48.000Z",
+      "last_updated": "2026-11-23T14:29:48.000Z",
+      "portal_message": "Processing is being retried",
+      "last_error_display": "Temporary processing delay",
+      "correlation_id": "CORR-RDR-SAMPLE-0024",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:24:48Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:24:56Z",
+          "label": "RDR created as Pending",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:29:48Z",
+          "label": "Retry in progress",
+          "state": "warn"
+        }
+      ]
+    },
+    {
+      "key": "sample-025",
+      "rdr_id": "RDR-20261123-008446",
+      "submission_id": "SUB-20261123-000425",
+      "vin": "4T1R11AK4TA900128",
+      "dealer_id": "DLR-2130",
+      "customer": "Kendall Ward",
+      "sale_type": "LEASE",
+      "status": "COMPLETED",
+      "transaction_state": "COMPLETED",
+      "priority": "Low",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:25:05.000Z",
+      "last_updated": "2026-11-23T14:26:45.000Z",
+      "portal_message": "RDR processed successfully",
+      "last_error_display": null,
+      "correlation_id": "CORR-RDR-SAMPLE-0025",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:25:05Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:25:12Z",
+          "label": "Validation passed",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:26:45Z",
+          "label": "RDR completed",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "key": "sample-026",
+      "rdr_id": "RDR-20261123-008447",
+      "submission_id": "SUB-20261123-000426",
+      "vin": "4T1R11AK6TA900129",
+      "dealer_id": "DLR-1784",
+      "customer": "Skyler Martin",
+      "sale_type": "RETAIL",
+      "status": "FAILED",
+      "transaction_state": "FAILED",
+      "priority": "High",
+      "retry_count": 1,
+      "submitted_at": "2026-11-23T14:26:22.000Z",
+      "last_updated": "2026-11-23T14:29:22.000Z",
+      "portal_message": "RDR could not be completed",
+      "last_error_display": "Processing failed",
+      "correlation_id": "CORR-RDR-SAMPLE-0026",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:26:22Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:29:22Z",
+          "label": "Processing failed",
+          "state": "error"
+        }
+      ]
+    },
+    {
+      "key": "sample-027",
+      "rdr_id": "RDR-20261123-008448",
+      "submission_id": "SUB-20261123-000427",
+      "vin": "4T1R11AK2TA900130",
+      "dealer_id": "DLR-2098",
+      "customer": "Noah Ellis",
+      "sale_type": "RETAIL",
+      "status": "PENDING",
+      "transaction_state": "PENDING",
+      "priority": "Medium",
+      "retry_count": 0,
+      "submitted_at": "2026-11-23T14:27:39.000Z",
+      "last_updated": "2026-11-23T14:31:39.000Z",
+      "portal_message": "Submission accepted and awaiting processing",
+      "last_error_display": "Processing in progress",
+      "correlation_id": "CORR-RDR-SAMPLE-0027",
+      "source_type": "grid_fixture_only",
+      "timeline": [
+        {
+          "time": "2026-11-23T14:27:39Z",
+          "label": "Submission received",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:27:47Z",
+          "label": "RDR created as Pending",
+          "state": "done"
+        },
+        {
+          "time": "2026-11-23T14:31:39Z",
+          "label": "Awaiting processing",
+          "state": "warn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+RDR AUTONOMOUS L2 SUPPORT HARNESS — TEST INCIDENTS
+=================================================
+
+Application: Retail Delivery Report (RDR)
+Environment: Synthetic prototype / test data
+Incident date for INC-001 to INC-003: November 23, 2026
+
+PURPOSE
+-------
+These are user-facing incident tickets for testing the Browser, Logs, DB,
+and Docs subagents and the main orchestration workflow. Root causes have
+intentionally NOT been included in the tickets.
+
+DATA COVERAGE
+-------------
+INC-001 through INC-006: Based on the three original VINs with matching
+synthetic RDR logs and dashboard records. INC-004 through INC-006 are
+alternative user reports for the same transactions as INC-001 through INC-003.
+INC-007 through INC-012: Additional dashboard test records. Matching
+incident-specific synthetic logs were NOT supplied for these six tickets.
+The harness should report insufficient log evidence where appropriate,
+not invent a root cause.
+
+
+======================================================================
+INC-001 — RDR Transaction Stuck in Pending Status
+======================================================================
+Application: RDR (Retail Delivery Report)
+VIN: 4T1R11AK6TA900101
+Dealer ID: DLR-1042
+RDR ID: RDR-20261123-008421
+Submission ID: SUB-20261123-000184
+Reported Status: PENDING
+Incident Date: November 23, 2026
+
+Incident Description:
+A dealership user reported that an RDR was submitted successfully, but
+its transaction has remained in PENDING status for an extended period.
+The dealer has checked the RDR dashboard multiple times, but the status
+has not changed to Completed. The dashboard displays "Processing delayed."
+
+Support Request:
+Investigate why the RDR transaction is still Pending, identify the
+underlying cause, and recommend the appropriate resolution.
+
+
+======================================================================
+INC-002 — Dealer Unable to Complete RDR Submission
+======================================================================
+Application: RDR (Retail Delivery Report)
+VIN: 4T1R11AK8TA900102
+Dealer ID: DLR-2077
+Submission ID: SUB-20261123-000237
+Reported Status: REJECTED
+Incident Date: November 23, 2026
+
+Incident Description:
+A dealership user reported that they are unable to submit an RDR for a
+recently sold vehicle. Whenever the dealer attempts to submit the
+transaction, the application rejects the request and displays:
+"We couldn't submit this RDR. Review the entered information and try again."
+The dealer has attempted to resubmit, but the issue continues.
+
+Support Request:
+Investigate why the RDR submission is being rejected, determine whether
+this is an application issue or a data-related problem, and recommend
+the necessary corrective action.
+
+
+======================================================================
+INC-003 — RDR Submission Blocked During Vehicle Verification
+======================================================================
+Application: RDR (Retail Delivery Report)
+VIN: 4T1R11AKXTA900103
+Dealer ID: DLR-3018
+Submission ID: SUB-20261123-000316
+Reported Status: BLOCKED
+Incident Date: November 23, 2026
+
+Incident Description:
+A dealership user reported that they are unable to complete an RDR
+submission for a vehicle. The dealer entered the required details and
+attempted to submit, but the application could not complete the process.
+The RDR dashboard currently shows BLOCKED with the message:
+"Vehicle eligibility could not be verified right now. Please try again later."
+
+Support Request:
+Investigate why vehicle verification is preventing the RDR submission,
+identify the responsible system or dependency, and recommend the
+appropriate resolution.
+
+
+======================================================================
+INC-004 — RDR Processing Not Completing
+======================================================================
+Application: RDR
+VIN: 4T1R11AK6TA900101
+Dealer ID: DLR-1042
+RDR ID: RDR-20261123-008421
+
+Incident Description:
+The dealership reported that the RDR submission was accepted, but the
+transaction has not reached Completed status. The dealer noticed that
+the system has attempted to process the transaction multiple times, but
+the status remains Pending.
+
+Support Request:
+Investigate why the transaction has not completed, determine whether
+additional processing attempts are required, and recommend the
+appropriate next steps.
+
+
+======================================================================
+INC-005 — Repeated RDR Submission Failure
+======================================================================
+Application: RDR
+VIN: 4T1R11AK8TA900102
+Dealer ID: DLR-2077
+Submission ID: SUB-20261123-000237
+
+Incident Description:
+A dealership user reported that the RDR application continues to reject
+their submission. The user attempted to submit the information more than
+once but received the same generic error message. They are unable to
+determine which information needs to be corrected.
+
+Support Request:
+Identify why the submission is being rejected and determine whether
+the issue requires a dealer correction or application support.
+
+
+======================================================================
+INC-006 — Vehicle Verification Preventing RDR Completion
+======================================================================
+Application: RDR
+VIN: 4T1R11AKXTA900103
+Dealer ID: DLR-3018
+Submission ID: SUB-20261123-000316
+
+Incident Description:
+The dealer reported that the RDR submission cannot proceed because the
+system is unable to verify the vehicle information. The dealership
+confirmed that the vehicle details were entered, but the application
+continues to show the submission as Blocked.
+
+Support Request:
+Investigate why vehicle verification is unavailable, identify the
+affected application or service, and recommend the appropriate recovery
+action.
+
+
+======================================================================
+INC-007 — RDR Pending Without Processing Confirmation
+======================================================================
+Application: RDR
+VIN: 4T1R11AK5TA900106
+Dealer ID: DLR-3018
+RDR ID: RDR-20261123-008424
+
+Incident Description:
+The dealer reported that the RDR transaction was submitted successfully,
+but it remains in Pending status. The dashboard indicates that the
+submission is awaiting processing, and the dealer has not received
+confirmation that the transaction has completed.
+
+Support Request:
+Investigate the current processing state and determine whether the
+transaction is progressing normally or requires support intervention.
+
+
+======================================================================
+INC-008 — RDR Processing Failed
+======================================================================
+Application: RDR
+VIN: 4T1R11AK9TA900108
+Dealer ID: DLR-3321
+RDR ID: RDR-20261123-008426
+
+Incident Description:
+A dealership user reported that an RDR transaction could not be
+completed. The dashboard displays Failed status with the message
+"Processing failed." The dealer is unable to understand why the
+transaction failed.
+
+Support Request:
+Analyze the available evidence, identify the cause of the processing
+failure, and recommend the appropriate resolution.
+
+
+======================================================================
+INC-009 — RDR Retrying Without Completion
+======================================================================
+Application: RDR
+VIN: 4T1R11AK7TA900110
+Dealer ID: DLR-2130
+RDR ID: RDR-20261123-008428
+
+Incident Description:
+The dealership reported that an RDR is still being processed despite
+multiple retry attempts. The dashboard shows Retrying status, with two
+processing retries recorded.
+
+Support Request:
+Investigate why the transaction requires retries and determine whether
+the dealer should wait or whether further technical investigation is
+needed.
+
+
+======================================================================
+INC-010 — RDR Rejected Without Detailed Explanation
+======================================================================
+Application: RDR
+VIN: 4T1R11AK0TA900112
+Dealer ID: DLR-2098
+Submission ID: SUB-20261123-000409
+
+Incident Description:
+The dealer attempted to submit an RDR, but the application rejected the
+submission. The dashboard shows the message "Submission was rejected.
+Review the entered information." The dealer cannot identify the
+specific reason.
+
+Support Request:
+Determine why the submission was rejected and advise on the next
+corrective action.
+
+
+======================================================================
+INC-011 — RDR Blocked During Submission
+======================================================================
+Application: RDR
+VIN: 4T1R11AKXTA900117
+Dealer ID: DLR-3321
+Submission ID: SUB-20261123-000414
+
+Incident Description:
+A dealer reported that an RDR submission cannot be completed. The
+dashboard shows Blocked status and indicates that vehicle information
+is unavailable.
+
+Support Request:
+Investigate the submission failure, determine whether the issue is
+related to vehicle information or an application dependency, and
+recommend next steps.
+
+
+======================================================================
+INC-012 — RDR Transaction Failed After Submission
+======================================================================
+Application: RDR
+VIN: 4T1R11AKXTA900120
+Dealer ID: DLR-1784
+RDR ID: RDR-20261123-008438
+
+Incident Description:
+A dealership reported that an RDR transaction was created successfully
+but subsequently failed during processing. The dashboard displays
+Failed status and indicates that one retry has occurred.
+
+Support Request:
+Investigate why the transaction failed after creation, identify any
+available technical evidence, and recommend an appropriate recovery
+procedure.
+
+
+======================================================================
+TEST NOTES (FOR TEST OPERATOR — NOT PART OF USER INCIDENT REPORTS)
+======================================================================
+- INC-001 and INC-004 target the same log-backed transaction (Demo 1).
+- INC-002 and INC-005 target the same log-backed submission (Demo 2).
+- INC-003 and INC-006 target the same log-backed submission (Demo 3).
+- INC-007 through INC-012 are dashboard-only scenarios and should not
+  produce a confirmed log-derived root cause without additional evidence.
+- The ticket descriptions intentionally avoid disclosing root causes.

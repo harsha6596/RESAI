@@ -1,0 +1,13 @@
+deepagents
+langchain-stagehand 
+langgraph-checkpoint-sqlite 
+chromadb
+ipykernel
+langchain
+langchain-anthropic
+langchain-groq
+tavily-python
+python-dotenv
+langchain_quickjs
+rank-bm25
+pypdf

@@ -1,0 +1,100 @@
+LAYER 1 TEST INCIDENTS — GENERAL KNOWLEDGE QUESTIONS
+=====================================================
+
+These tickets intentionally contain no VIN, RDR ID, submission ID, dealer ID,
+or reported status. They should route to Layer 1 and be answered from the
+reduced layer1_kb/ index.
+
+
+======================================================================
+INC-L1-001 — Safety Technology Overview
+======================================================================
+Application: Dealer Operations
+
+Incident Description:
+A sales consultant needs a concise explanation of the Safety Sense
+technology available across the current product lineup.
+
+Expected Knowledge Source: 01_Product_Knowledge.pdf
+
+Support Request:
+Explain what Safety Sense is and summarize the main safety features
+described in the product knowledge guide.
+
+
+======================================================================
+INC-L1-002 — 2026 Camry Product Question
+======================================================================
+Application: Dealer Operations
+
+Incident Description:
+A customer is asking for a high-level overview of the 2026 Camry before
+speaking with a sales consultant.
+
+Expected Knowledge Source: 01_Product_Knowledge.pdf
+
+Support Request:
+Provide the key 2026 Camry product points documented in the product guide.
+
+
+======================================================================
+INC-L1-003 — Customer Deposit and Hold Policy
+======================================================================
+Application: Dealer Operations
+
+Incident Description:
+A dealership employee wants to understand the standard policy for customer
+deposits and vehicle holds.
+
+Expected Knowledge Source: 02_Policies_Procedures (1).pdf
+
+Support Request:
+Summarize the documented customer deposit and hold policy, including any
+important conditions or limitations.
+
+
+======================================================================
+INC-L1-004 — Vehicle Delivery Procedure
+======================================================================
+Application: Dealer Operations
+
+Incident Description:
+A new sales manager needs a checklist-level explanation of the standard
+vehicle delivery process.
+
+Expected Knowledge Source: 02_Policies_Procedures (1).pdf
+
+Support Request:
+Summarize the documented vehicle delivery process and required standards.
+
+
+======================================================================
+INC-L1-005 — New Employee Onboarding
+======================================================================
+Application: Dealer Operations
+
+Incident Description:
+A newly hired dealership employee is asking what the standard onboarding
+program covers.
+
+Expected Knowledge Source: 07_Training_FAQs.pdf
+
+Support Request:
+Summarize the onboarding topics and training expectations described in the
+training FAQ guide.
+
+
+======================================================================
+INC-L1-006 — Customer FAQ About Vehicle Features
+======================================================================
+Application: Dealer Operations
+
+Incident Description:
+A sales consultant needs help answering a general customer question about
+vehicle features and technology.
+
+Expected Knowledge Source: 07_Training_FAQs.pdf
+
+Support Request:
+Describe how the training FAQ guide recommends handling common customer
+questions about vehicle features and technology.
